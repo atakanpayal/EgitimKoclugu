@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+:root {
+  --textcolor: #212529;
+  --bglight: #aec6cf;
+  --bgdark: #ffdba4;
+  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+a {
+  text-decoration: none !important;
+  color: #212529 !important;
+}

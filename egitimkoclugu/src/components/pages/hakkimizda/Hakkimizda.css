@@ -1,0 +1,91 @@
+.text-hakkimizda {
+  background-image: url(https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0 150px 0;
+  text-align: center;
+}
+.text-big-hakkimizda {
+  font-size: 42px;
+  font-weight: 800;
+}
+.text-small-hakkimizda {
+  font-size: 24px;
+}
+.grid-hakkimizda {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.text-hakkimizda-more {
+  font-size: 20px;
+  padding: 20px;
+}
+.img-hakkimizda-more {
+  margin-top: 20px;
+  background-image: url(https://www.egitimkocu.com.tr/storage/sitepages/online-egitim-kocu-kurucusu-ebru-karakoc-kimdir-2022-03-28-62418b58dae7f.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 150px;
+}
+.teamwork-img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .teamwork-img {
+    padding: 100px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .text-hakkimizda-more {
+    font-size: 20px;
+    padding: 75px;
+  }
+  .img-hakkimizda-more {
+    padding: 200px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .text-big-hakkimizda {
+    font-size: 62px;
+    font-weight: 800;
+  }
+  .grid-hakkimizda {
+    grid-template-columns: 50% 50%;
+  }
+  .text-hakkimizda-more {
+    padding: 50px;
+  }
+  .img-hakkimizda-more {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .teamwork-img {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  .img-hakkimizda-more {
+    padding: 200px;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .teamwork-img {
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .grid-hakkimizda {
+    padding: 0 10vw 0 10vw;
+  }
+  .img-hakkimizda-more {
+    margin: 20px;
+  }
+}

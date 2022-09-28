@@ -1,0 +1,121 @@
+.justify-content-center {
+  padding: 0 5vw;
+}
+.adayformu {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "name name"
+    "talep talep"
+    "sinif sinif"
+    "alan alan"
+    "hedef hedef"
+    "okul okul"
+    "email email"
+    "phone phone"
+    "dershane dershane"
+    "sehir sehir"
+    "text-area text-area";
+}
+.name-div {
+  grid-area: name;
+}
+.talep-div {
+  grid-area: talep;
+}
+.sinif-div {
+  grid-area: sinif;
+}
+.alan-div {
+  grid-area: alan;
+}
+.hedef-div {
+  grid-area: hedef;
+}
+.okul-div {
+  grid-area: okul;
+}
+.dershane-div {
+  grid-area: dershane;
+}
+.email-div {
+  grid-area: email;
+}
+.phone-div {
+  grid-area: phone;
+  display: flex;
+  flex-direction: column;
+}
+.sehir-div {
+  grid-area: sehir;
+}
+.text-area-div {
+  grid-area: text-area;
+}
+#message {
+  height: 25vh;
+}
+.styled-input-aday {
+  width: 100%;
+  padding: 5px 0;
+}
+.input-div {
+  margin: 5px 5px;
+}
+/* From uiverse.io */
+.button-submit {
+  width: 100%;
+  padding: 12px 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: var(--bgdark);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-submit:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-submit:active {
+  transform: translateY(-1px);
+}
+@media only screen and (min-width: 768px) {
+  .justify-content-center {
+    padding: 0 10vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .adayformu {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "name talep"
+      "sinif alan"
+      "hedef okul"
+      "dershane email"
+      "phone sehir"
+      "text-area text-area";
+  }
+  .input-div {
+    margin: 10px 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .justify-content-center {
+    padding: 0 14vw;
+  }
+}

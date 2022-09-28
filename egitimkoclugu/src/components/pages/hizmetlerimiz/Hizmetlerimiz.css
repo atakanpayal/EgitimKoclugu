@@ -1,0 +1,149 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+.hizmet {
+  display: grid;
+  place-content: center;
+}
+.header {
+  text-align: center;
+}
+.marg {
+  margin-top: 80px;
+}
+.plan header {
+  background-color: var(--bgdark) !important;
+}
+.snip1404 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px 0;
+}
+.snip1404 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+.snip1404 .plan {
+  font-size: 18px;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  border: 2px solid var(--bgdark);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
+}
+.snip1404 .plan:hover i,
+.snip1404 .plan.hover i {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.snip1404 .plan:first-of-type {
+  border-radius: 8px 0 0 8px;
+}
+.snip1404 .plan:last-of-type {
+  border-radius: 0 8px 8px 0;
+}
+.snip1404 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.snip1404 header {
+  background-color: #5f3047;
+  color: #ffffff;
+}
+.snip1404 .plan-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 0;
+  padding: 20px 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.snip1404 .plan-title:after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 300px 0 0;
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+}
+.snip1404 .plan-cost {
+  padding: 40px 20px 10px;
+  text-align: right;
+}
+.snip1404 .plan-price {
+  font-weight: 600;
+  font-size: 3em;
+}
+.snip1404 .plan-type {
+  opacity: 0.8;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+.snip1404 .plan-features {
+  padding: 0 0 20px;
+  margin: 0;
+  list-style: outside none none;
+}
+.snip1404 .plan-features li {
+  padding: 8px 5%;
+}
+.snip1404 .plan-features i {
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.snip1404 .plan-select {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .snip1404 .plan {
+    width: 50%;
+  }
+  .snip1404 .plan-title,
+  .snip1404 .plan-select a {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .snip1404 .plan-select,
+  .snip1404 .featured .plan-select {
+    padding: 20px;
+  }
+  .snip1404 .featured {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .snip1404 .plan {
+    width: 100%;
+  }
+  .snip1404 {
+    grid-template-columns: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .snip1404 {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .snip1404 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

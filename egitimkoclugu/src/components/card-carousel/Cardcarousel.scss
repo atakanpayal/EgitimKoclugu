@@ -1,0 +1,92 @@
+.card-carousel {
+  grid-area: card-carousel;
+}
+.kard-list {
+  width: 100%;
+  justify-self: center !important;
+  padding: 10px;
+}
+.sc-ftvSup {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+}
+.rec.rec-arrow {
+  border-radius: 0;
+  display: none;
+  color: var(--bglight);
+}
+.rec.rec-arrow:hover {
+  color: var(--bgdark);
+  background-color: var(--bglight) !important;
+}
+.rec.rec-dot {
+  background-color: var(--bglight) !important;
+}
+.rec.rec-dot_active {
+  color: var(--bgdark) !important;
+}
+.kard {
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(#000, 0.05), 0 20px 50px 0 rgba(#000, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 1.25rem;
+  position: relative !important;
+  transition: 0.25s ease-in;
+  background-image: linear-gradient(var(--bglight), var(--bglight));
+  background-size: 0 100%, auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.5s ease-out;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 0 0 2px var(--bgdark), 0 10px 60px 0 rgba(#000, 0.1);
+    color: var(--bgdark);
+    background-size: 100% 100%, auto;
+  }
+}
+
+.kard-image {
+  border-radius: 10px;
+  overflow: hidden;
+  object-position: center;
+  object-fit: fill;
+}
+
+.kard-header {
+  text-align: center;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.25;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.kard-footer {
+  margin-top: 1.25rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1200px) {
+  .service-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+  }
+  .rec.rec-arrow {
+    display: block;
+  }
+}
